@@ -1,0 +1,12 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = magnusrodseth
+	email = 59113973+magnusrodseth@users.noreply.github.com
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
