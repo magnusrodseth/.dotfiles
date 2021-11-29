@@ -6,9 +6,12 @@ let $LANG = 'en_US'
 
 set noerrorbells
 set tabstop=4 softtabstop=4
+set backspace=indent,eol,start
+
 set shiftwidth=4
 set expandtab
 set smartindent
+set relativenumber
 set nu
 " Don't wrap overflowed text
 set nowrap
@@ -32,7 +35,7 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 120<CR>
 " TODO: Make vim-ripgrep work
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>

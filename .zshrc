@@ -1,49 +1,15 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/magnusrodseth/.oh-my-zsh"
-export PATH="$PATH:/Users/magnusrodseth/Developer/flutter/bin"
-
+export DEFAULT_USER="$(whoami)"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# powerlevel9k config
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir virtualenv vcs)
-POWERLEVEL9K_DISABLE_RPROMPT=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
-# segment color
-# ssh
-POWERLEVEL9K_SSH_BACKGROUND='none'
-# dir
-POWERLEVEL9K_DIR_HOME_FOREGROUND='004'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='004'
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='004'
-POWERLEVEL9K_DIR_HOME_BACKGROUND='none'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='none'
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='none'
-#virtualenv
-POWERLEVEL9K_VIRTUALENV_FOREGROUND='005'
-POWERLEVEL9K_VIRTUALENV_BACKGROUND='none'
-# vcs
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='002'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='003'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='001'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='none'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='none'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='none'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -58,14 +24,13 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='none'
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -80,6 +45,9 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='none'
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -103,12 +71,13 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='none'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-z zsh-autosuggestions)
-
-ZSH_DISABLE_COMPFIX="true"
+plugins=(
+    git 
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/custom/plugins/zsh-z/zsh-z.plugin.zsh
 
 # User configuration
 
@@ -135,20 +104,3 @@ source $ZSH/custom/plugins/zsh-z/zsh-z.plugin.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-
-
-
-
-
-autoload -U compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-zstyle ':completion:*' menu select
-
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
