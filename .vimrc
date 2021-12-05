@@ -30,6 +30,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 " , : Go to end of file, go to end of line, create a new blank line
 map , GA<enter>
 
+let mapleader = " "
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -93,7 +94,6 @@ endif
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_use_caching = 0
 
-let mapleader = " "
 
 " netrx
 let g:netrw_browse_split = 2
