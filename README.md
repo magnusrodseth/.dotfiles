@@ -2,7 +2,7 @@
 
 ## Description ✏️
 
-...
+My personal `.dotfiles` configuration.
 
 ## Developer Information 🙋🏼‍♂️
 
