@@ -1,0 +1,2 @@
+" ----- Appearance -----
+colorscheme onedark
