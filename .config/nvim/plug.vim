@@ -13,7 +13,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jremmen/vim-ripgrep'
 
 " Color scheme
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
+Plug 'navarasu/onedark.nvim'
 
 " Extension for git tools (blame, logs, etc...)
 Plug 'tpope/vim-fugitive'
