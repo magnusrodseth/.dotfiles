@@ -11,3 +11,6 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
+" Auto-format code and add missing imports. Run this automatically on save.
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+

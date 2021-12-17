@@ -1,0 +1,14 @@
+{"languageserver": {
+     "kotlin": {
+            "command": "kotlin-language-server",
+            "filetypes": ["kotlin"]
+        },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  }}

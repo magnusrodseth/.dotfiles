@@ -12,10 +12,7 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 
 " pv - 'Project view'
-nnoremap <leader>pv :NERDTree<CR>
-
-" pc - 'Project view close'
-nnoremap <leader>pc :NERDTreeToggle<CR> 
+nnoremap <leader>pv :NERDTreeToggle<CR> 
 
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>

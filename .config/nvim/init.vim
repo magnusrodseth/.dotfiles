@@ -4,11 +4,11 @@ runtime basic.vim
 " ----- Keymaps -----
 runtime keymaps.vim
 
-" ----- LSP -----
-" TODO: Fix LSP stuff
-
 " ----- Plugins -----
 runtime plug.vim
+
+" ----- LSP. This must go below plugins. -----
+runtime lsp.vim
 
 " ----- Appearance -----
 runtime appearance.vim
