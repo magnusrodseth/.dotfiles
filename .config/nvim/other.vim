@@ -4,13 +4,10 @@ if executable('rg')
     let g:rg_derive_root='true'
 endif
 
-" ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_use_caching = 0
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
-
-" netrx
-let g:netrw_browse_split = 2
-let g:netrw_banner = 0
-let g:netrw_winsize = 85
+" Show hidden files in NERDTree
+let NERDTreeShowHidden=1
 

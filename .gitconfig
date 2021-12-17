@@ -11,4 +11,5 @@
 [init]
     defaultBranch = main
 [alias]
+    ; Open GitKraken in current working directory
     k = !"open -na '/Applications/GitKraken.app/Contents/MacOS/GitKraken' --args -p $(pwd)"

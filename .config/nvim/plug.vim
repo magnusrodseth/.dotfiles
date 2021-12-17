@@ -27,6 +27,9 @@ Plug 'neovim/nvim-lspconfig'
 " View man pages in vim. Grep for the man pages.
 Plug 'vim-utils/vim-man'
 
+" Conquerer of Completion (COC) 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Improves file finding
 Plug 'ctrlpvim/ctrlp.vim'
 
@@ -34,8 +37,27 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Vim Commentary, for commenting out code
+Plug 'tpope/vim-commentary'
+
 " Undo history visualizer
 Plug 'mbbill/undotree'
 
+" Kotlin syntax highlighting
+Plug 'udalov/kotlin-vim'
+
+" Surround plugin
+Plug 'tpope/vim-surround'
+
+" Multiple cursors 
+Plug 'terryma/vim-multiple-cursors'
+
+" Nerdtree plugin
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 " Initialize plugin system
 call plug#end()
+
+
