@@ -30,9 +30,6 @@ Plug 'vim-utils/vim-man'
 " Conquerer of Completion (COC) 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Improves file finding
-Plug 'ctrlpvim/ctrlp.vim'
-
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
