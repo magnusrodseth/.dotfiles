@@ -4,6 +4,10 @@
 
 My personal `.dotfiles` configuration.
 
+## Getting started
+
+Clone the repository into the `~` directory, in order for the symlinks below to work.
+
 ## Bootstrapping the new configuration
 
 ```sh
@@ -15,6 +19,13 @@ sh brew.sh
 
 # Bootstrap shell configuration
 sh bootstrap.sh
+```
+
+## Adding symlinks
+
+```sh
+# Add symlinks
+sh symlinks.sh
 ```
 
 ## Sourcing the `nvim` configuration
