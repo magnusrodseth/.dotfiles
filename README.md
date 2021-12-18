@@ -21,6 +21,10 @@ sh brew.sh
 sh bootstrap.sh
 ```
 
+## Downloading applications that requires using App Store
+
+[Click here](./APP_STORE_APPLICATIONS.md) to read more.
+
 ## Adding symlinks
 
 ```sh

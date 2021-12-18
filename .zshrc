@@ -76,7 +76,15 @@ plugins=(
     git 
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-z
+    vi-mode
 )
+
+# Controls whether the prompt is redrawn when switching to a different input mode.
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+
+# Controls the indicator when in vi normal mode
+MODE_INDICATOR="%F{green}<<< NORMAL%f"
 
 source $ZSH/oh-my-zsh.sh
 

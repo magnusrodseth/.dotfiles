@@ -22,6 +22,11 @@ nnoremap j jzz
 nnoremap k kzz
 nnoremap G Gzz
 
+" gd - Go to definition
+nmap <leader>gd <Plug>(coc-definition)
+" gr - Show references
+nmap <leader>gr <Plug>(coc-references)
+
 " <leader>w<leader>s - Write and source file
 nnoremap <leader>w<leader>s :w <bar> :source % <CR>
 
