@@ -13,4 +13,5 @@ let NERDTreeShowHidden=1
 
 " Auto-format code and add missing imports. Run this automatically on save.
 autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+command! -nargs=0 Format :call CocAction('format')
 

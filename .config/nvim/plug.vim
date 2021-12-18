@@ -18,6 +18,9 @@ Plug 'navarasu/onedark.nvim'
 " Extension for git tools (blame, logs, etc...)
 Plug 'tpope/vim-fugitive'
 
+" Format files 
+Plug 'sbdchd/neoformat'
+
 " Indentation and coloring for TypeScript
 Plug 'leafgarland/typescript-vim'
 

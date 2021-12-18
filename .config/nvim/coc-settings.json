@@ -1,8 +1,15 @@
-{"languageserver": {
-     "kotlin": {
-            "command": "kotlin-language-server",
-            "filetypes": ["kotlin"]
-        },
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "json",
+    "kotlin"
+  ],
+  "languageserver": {
+    "kotlin": {
+      "command": "kotlin-language-server",
+      "filetypes": ["kotlin"]
+    },
     "golang": {
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
@@ -11,4 +18,5 @@
         "usePlaceholders": true
       }
     }
-  }}
+  }
+}
