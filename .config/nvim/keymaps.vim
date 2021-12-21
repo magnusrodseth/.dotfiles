@@ -58,3 +58,14 @@ nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 " gs - git status
 nmap <leader>gs :G<CR>
+" gc - git commit
+nmap <leader>gc :Git commit<CR>
+" gp - git push
+nmap <leader>gp :Git push<CR>
+" gcheck - git checkout
+nmap <leader>gcheck :Git checkout 
+" g<CR> - git
+nmap <leader>g<CR> :Git 
+
+" this is a comment
+"
