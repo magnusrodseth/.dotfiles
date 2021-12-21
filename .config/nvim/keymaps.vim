@@ -52,3 +52,9 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-s>'
 let g:multi_cursor_quit_key            = '<Esc>'
+
+" ---- fugitive.vim keymaps -----
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+" gs - git status
+nmap <leader>gs :G<CR>
