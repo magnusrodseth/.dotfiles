@@ -3,8 +3,12 @@
     "css",
     "markdown",
     "json",
-    "kotlin"
+    "kotlin",
+    "c"
   ],
+  "prettier": {
+    "proseWrap": "always"
+  },
   "languageserver": {
     "kotlin": {
       "command": "kotlin-language-server",

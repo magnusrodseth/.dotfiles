@@ -15,6 +15,13 @@ set relativenumber
 set number
 " Don't wrap overflowed text
 set nowrap
+
+" Wrap overflowed text only in Markdown files
+augroup Markdown
+  autocmd!
+  autocmd FileType markdown set wrap
+augroup END
+
 set smartcase
 set noswapfile
 set nobackup

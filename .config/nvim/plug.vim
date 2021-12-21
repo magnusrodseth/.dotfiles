@@ -18,9 +18,6 @@ Plug 'navarasu/onedark.nvim'
 " Extension for git tools (blame, logs, etc...)
 Plug 'tpope/vim-fugitive'
 
-" Format files 
-Plug 'sbdchd/neoformat'
-
 " Indentation and coloring for TypeScript
 Plug 'leafgarland/typescript-vim'
 
@@ -30,7 +27,7 @@ Plug 'neovim/nvim-lspconfig'
 " View man pages in vim. Grep for the man pages.
 Plug 'vim-utils/vim-man'
 
-" Conquerer of Completion (COC) 
+" Conquerer of Completion (COC)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Fuzzy finder
@@ -57,7 +54,11 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+" TODO: Remove this when done playing around
+Plug 'ThePrimeagen/vim-be-good'
+
 " Initialize plugin system
 call plug#end()
+
 
 
