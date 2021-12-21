@@ -32,3 +32,6 @@ set incsearch
 
 set colorcolumn=90
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" An updated comment 
+"
