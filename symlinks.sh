@@ -13,3 +13,4 @@ ln -s "${DOTFILES_DIRECTORY}/.bash_profile" ~/.bash_profile
 ln -s "${DOTFILES_DIRECTORY}/.oh-my-zsh" ~/.oh-my-zsh
 ln -s "${DOTFILES_DIRECTORY}/.gitconfig" ~/.gitconfig
 ln -s "${DOTFILES_DIRECTORY}/.config/nvim" ~/.config/nvim
+ln -s "${DOTFILES_DIRECTORY}/gitui/theme.ron" ~/.config/gitui/theme.ron
