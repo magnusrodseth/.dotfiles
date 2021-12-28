@@ -26,6 +26,10 @@ nnoremap G Gzz
 nmap <leader>gd <Plug>(coc-definition)
 " gr - Show references
 nmap <leader>gr <Plug>(coc-references)
+" rn - Rename
+nmap <leader>rn <Plug>(coc-rename)
+" CTRL + SPACE - Show autocomplete suggestions
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " <leader>w<leader>s - Write and source file
 nnoremap <leader>w<leader>s :w <bar> :source % <CR>

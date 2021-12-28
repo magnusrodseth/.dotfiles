@@ -1,0 +1,35 @@
+" .ideavimrc holds the vim config for JetBrains products
+
+
+" ----- Basic configuration -----
+syntax on
+
+set langmenu=en_US
+let $LANG = 'en_US'
+
+set noerrorbells
+set tabstop=4 softtabstop=4
+set backspace=indent,eol,start
+
+set shiftwidth=4
+set expandtab
+set smartindent
+set relativenumber
+set number
+
+set smartcase
+" Use incremental search
+set incsearch
+
+
+" ----- Keymaps -----
+" , - Go to end of file, go to end of line, create a new blank line
+map , GA<enter>
+
+let mapleader = " "
+
+" Ensure cursor stays vertically centered
+nnoremap j jzz
+nnoremap k kzz
+nnoremap G Gzz
+
