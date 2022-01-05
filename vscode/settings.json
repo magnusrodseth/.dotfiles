@@ -1,0 +1,150 @@
+{
+  "git.enableSmartCommit": true,
+  "python.defaultInterpreterPath": "/Users/magnusrodseth/opt/anaconda3/bin/python",
+  "nasc-touchbar.peekDefinition": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "nasc-touchbar.blockComment": true,
+  "python.showStartPage": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "nasc-touchbar.selectNext": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "open-in-browser.default": "chrome",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "nasc-touchbar.showCommands": false,
+  "nasc-touchbar.commentLine": true,
+  "terminal.integrated.inheritEnv": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "editor.autoClosingBrackets": "always",
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.renderWhitespace": "all",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "java.semanticHighlighting.enabled": true,
+  "todohighlight.keywords": [],
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "[java]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  },
+  "editor.suggestSelection": "first",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "editor.fontSize": 16,
+  "code-runner.clearPreviousOutput": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "nasc-touchbar.rename": false,
+  "nasc-touchbar.addCursorBelow": false,
+  "[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "dart.flutterSdkPath": "/Users/magnusrodseth/Developer/flutter",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "redhat.telemetry.enabled": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.languageServer": "Default",
+  "python.formatting.provider": "autopep8",
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {},
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.tabs.enabled": true,
+  "python.pythonPath": "/Users/magnusrodseth/opt/anaconda3/bin/python",
+  "nasc-touchbar.goToDefinition": false,
+  "python.jediEnabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "git.autofetch": true,
+  "[dart]": {
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.formatOnSave": true,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.vimrc.path": "$HOME/.config/nvim/init.vim",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "vim.vimrc.enable": true,
+  // Add relatvie line numbers
+  "editor.lineNumbers": "relative",
+  "vim.normalModeKeyBindings": [
+    // Ensure cursor stays vertically centered going down
+    {
+      "before": ["j"],
+      "after": ["j", "z", "z"]
+    },
+    // Ensure cursor stays vertically centered going up
+    {
+      "before": ["k"],
+      "after": ["k", "z", "z"]
+    },
+    // Go to end of file, go to end of line, create a new blank line
+    {
+      "before": [","],
+      "after": ["G", "A", "\n"]
+    },
+    // Go to top of file, go to start of line, enter insert mode
+    {
+      "before": [";"],
+      "after": ["g", "g", "I"]
+    }
+  ]
+}

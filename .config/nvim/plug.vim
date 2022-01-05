@@ -57,8 +57,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " TODO: Remove this when done playing around
 Plug 'ThePrimeagen/vim-be-good'
 
+" Svelte syntax highlighting
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
 " Initialize plugin system
 call plug#end()
-
-
 

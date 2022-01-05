@@ -22,6 +22,9 @@ nnoremap j jzz
 nnoremap k kzz
 nnoremap G Gzz
 
+" SHIFT + Y yanks to end of line
+nmap Y y$
+
 " gd - Go to definition
 nmap <leader>gd <Plug>(coc-definition)
 " gr - Show references
@@ -70,6 +73,3 @@ nmap <leader>gp :Git push<CR>
 nmap <leader>gcheck :Git checkout 
 " g<CR> - git
 nmap <leader>g<CR> :Git 
-
-" this is a comment
-"

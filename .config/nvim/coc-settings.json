@@ -49,5 +49,6 @@
     "constructor": "  ",
     "value": "  ",
     "enumMember": "  "
-  }
+  },
+  "svelte.enable-ts-plugin": true
 }

@@ -16,3 +16,7 @@ ln -s "${DOTFILES_DIRECTORY}/.config/nvim" ~/.config/nvim
 ln -s "${DOTFILES_DIRECTORY}/.config/lazygit/config.yml" ~/.config/lazygit/config.yml
 ln -s "${DOTFILES_DIRECTORY}/gitui/theme.ron" ~/.config/gitui/theme.ron
 ln -s "${DOTFILES_DIRECTORY}/.ideavimrc" ~/.ideavimrc
+ln -s "${DOTFILES_DIRECTORY}/.vscode" ~/.vscode
+ln -s "~/.dotfiles/vscode/keybindings.json" "~/Library/Application\ Support/Code/User/keybindings.json" 
+ln -s "~/.dotfiles/vscode/keybindings.json" "~/Library/Application\ Support/Code/User/keybindings.json" 
+ln -s "~/.dotfiles/vscode/snippets" "~/Library/Application\ Support/Code/User/snippets" 
