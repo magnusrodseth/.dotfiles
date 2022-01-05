@@ -26,7 +26,6 @@ set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.dotfiles/.vim/undodir
-set undofile
 set incsearch
 
 set colorcolumn=90
@@ -57,7 +56,8 @@ colorscheme onedark
 
 " ----- Keymaps -----
 " , - Go to end of file, go to end of line, create a new blank line
-map , GA<enter>
+nmap , GA<enter>
+nmap ; ggI
 
 let mapleader = " "
 
@@ -98,4 +98,5 @@ endif
 " Let NERDTree display hidden files
 let NERDTreeShowHidden=1
   
+
 
