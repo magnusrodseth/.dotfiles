@@ -44,15 +44,16 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'joshdick/onedark.vim'
-
 Plug 'preservim/nerdtree'
+
+if has('ide')
+    " ----- Emulated Vim plugins -----
+    Plug 'tpope/vim-surround'
+endif
 
 call plug#end()
 
 " ----- Appearance -----
-let g:onedark_style = 'warm'
-colorscheme onedark
 
 " ----- Keymaps -----
 " , - Go to end of file, go to end of line, create a new blank line
@@ -98,5 +99,8 @@ endif
 " Let NERDTree display hidden files
 let NERDTreeShowHidden=1
   
-
+if has('ide')
+    " ----- Keymaps -----
+    map <leader>rn  <Action>(RenameElement)
+endif
 
