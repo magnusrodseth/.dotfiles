@@ -14,13 +14,20 @@
       "command": "kotlin-language-server",
       "filetypes": ["kotlin"]
     },
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"],
-      "initializationOptions": {
-        "usePlaceholders": true
-      }
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf", "hcl"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  },
+  "golang": {
+    "command": "gopls",
+    "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+    "filetypes": ["go"],
+    "initializationOptions": {
+      "usePlaceholders": true
     }
   },
   "suggest.completionItemKindLabels": {

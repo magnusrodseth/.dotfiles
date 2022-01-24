@@ -115,3 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias intel="idea"
 alias vim="nvim"
+alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
+
+export EDITOR='/usr/local/bin/nvim'
+export VISUAL="$EDITOR"

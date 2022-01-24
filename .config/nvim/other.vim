@@ -12,8 +12,8 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 let NERDTreeShowHidden=1
 
 " Auto-format code and add missing imports. Run this automatically on save.
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
-command! -nargs=0 Format :call CocAction('format')
+" autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+" autocmd BufWritePre *.go :call CocActionAsync('format')
 
 " Get correct comment highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+

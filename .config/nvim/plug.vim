@@ -12,8 +12,10 @@ Plug 'vim-airline/vim-airline-themes'
 " Ripgrep
 Plug 'jremmen/vim-ripgrep'
 
+
 " Color scheme
 Plug 'navarasu/onedark.nvim'
+
 
 " Extension for git tools (blame, logs, etc...)
 Plug 'tpope/vim-fugitive'
@@ -60,6 +62,14 @@ Plug 'ThePrimeagen/vim-be-good'
 " Svelte syntax highlighting
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
+" vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'jvirtanen/vim-hcl'
+
 " Initialize plugin system
 call plug#end()
+
+
+
 
