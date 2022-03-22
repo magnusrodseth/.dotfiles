@@ -12,6 +12,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Ripgrep
 Plug 'jremmen/vim-ripgrep'
 
+" Indent guides
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 
 " Color scheme
 Plug 'navarasu/onedark.nvim'

@@ -4,7 +4,8 @@
     "markdown",
     "json",
     "kotlin",
-    "c"
+    "c",
+    "rust"
   ],
   "prettier": {
     "proseWrap": "always"

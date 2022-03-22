@@ -32,7 +32,7 @@
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "editor.renderWhitespace": "all",
   "[markdown]": {
@@ -154,5 +154,7 @@
       "before": [";"],
       "after": ["g", "g", "I"]
     }
-  ]
+  ],
+  "snyk.yesWelcomeNotification": false,
+  "editor.tabSize": 2
 }
