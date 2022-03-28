@@ -2,18 +2,9 @@
   "git.enableSmartCommit": true,
   "python.defaultInterpreterPath": "/Users/magnusrodseth/opt/anaconda3/bin/python",
   "nasc-touchbar.peekDefinition": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "nasc-touchbar.blockComment": true,
   "python.showStartPage": false,
   "workbench.iconTheme": "material-icon-theme",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "nasc-touchbar.selectNext": true,
   "latex-workshop.view.pdf.viewer": "tab",
   "open-in-browser.default": "chrome",
@@ -116,7 +107,12 @@
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
+  "eslint.format.enable": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
   "svelte.enable-ts-plugin": true,
   "[svelte]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -156,5 +152,11 @@
     }
   ],
   "snyk.yesWelcomeNotification": false,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
