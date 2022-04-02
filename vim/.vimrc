@@ -58,7 +58,6 @@ call plug#end()
 " ----- Keymaps -----
 " , - Go to end of file, go to end of line, create a new blank line
 nmap , GA<enter>
-nmap ; ggI
 
 let mapleader = " "
 
