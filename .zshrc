@@ -116,6 +116,7 @@ source $ZSH/oh-my-zsh.sh
 alias intel="idea"
 alias vim="nvim"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
+alias lzd="lazydocker"
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"

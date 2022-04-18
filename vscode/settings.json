@@ -35,7 +35,8 @@
     "*": false,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "c": true
   },
   "workbench.colorTheme": "Atom One Dark",
   "[java]": {
