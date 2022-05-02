@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh 
 
 # Find the .dotfiles directory on the machine
 DOTFILES_DIRECTORY="~/.dotfiles"
@@ -14,7 +14,8 @@ ln -s "${DOTFILES_DIRECTORY}/.oh-my-zsh" ~/.oh-my-zsh
 ln -s "${DOTFILES_DIRECTORY}/.gitconfig" ~/.gitconfig
 ln -s "${DOTFILES_DIRECTORY}/.config/nvim" ~/.config/nvim
 ln -s "${DOTFILES_DIRECTORY}/.config/lazygit/config.yml" ~/.config/lazygit/config.yml
-ln -s "${DOTFILES_DIRECTORY}/gitui/theme.ron" ~/.config/gitui/theme.ron
+ln -s "${DOTFILES_DIRECTORY}/.config/lazydocker/config.yml" ~/.config/lazydocker/config.yml
+ln -s "${DOTFILES_DIRECTORY}/.config/lazydocker/config.yml" /Users/magnusrodseth/Library/Application\ Support/lazydocker/config.yml
 ln -s "${DOTFILES_DIRECTORY}/.ideavimrc" ~/.ideavimrc
 ln -s "${DOTFILES_DIRECTORY}/.vscode" ~/.vscode
 ln -s "~/.dotfiles/vscode/keybindings.json" "~/Library/Application\ Support/Code/User/keybindings.json" 
