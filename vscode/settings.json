@@ -15,8 +15,9 @@
   "nasc-touchbar.showCommands": false,
   "nasc-touchbar.commentLine": true,
   "terminal.integrated.inheritEnv": false,
+  "terminal.external.osxExec": "iTerm.app",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
 
   "editor.autoClosingBrackets": "always",
   "[xml]": {
@@ -159,5 +160,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.lineHeight": 1.2
 }
