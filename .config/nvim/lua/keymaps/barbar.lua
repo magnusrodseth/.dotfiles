@@ -1,4 +1,4 @@
-local map = require("lua.keymaps.utils").map
+local map = require("keymaps.utils").map
 local opts = { noremap = true, silent = true }
 
 -- Go to buffer in position

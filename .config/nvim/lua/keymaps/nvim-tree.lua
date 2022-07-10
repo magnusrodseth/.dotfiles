@@ -1,3 +1,3 @@
-local map = require("lua.keymaps.utils").map
+local map = require("keymaps.utils").map
 
 map("n", "<leader>pv", ":NvimTreeToggle<CR>")

@@ -1,4 +1,4 @@
-local map = require("lua.keymaps.utils").map
+local map = require("keymaps.utils").map
 
 map("n", ",", "GA<CR>")
 map("n", "<leader>h", ":wincmd h<CR>")
