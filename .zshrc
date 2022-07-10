@@ -130,3 +130,31 @@ if [ -f '/Users/magnusrodseth/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/m
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/magnusrodseth/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/magnusrodseth/google-cloud-sdk/completion.zsh.inc'; fi
+
+# place this after nvm initialization!
+# Automatically execute nvm use if .nvmrc exists
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+export GITHUB_PACKAGES_TOKEN="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"
+
+
+
