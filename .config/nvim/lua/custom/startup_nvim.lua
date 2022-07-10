@@ -29,6 +29,7 @@ local settings = {
             { "> Command Palette", "Telescope commands", "<leader>cp" },
             { "> Recent Files", "Telescope oldfiles", "<leader>of" },
             { "> New File", "lua require'startup'.new_file()", "<leader>nf" },
+            { "> Pick buffer", "BufferPick", "<leader>bp" },
         },
         highlight = "String",
         default_color = "",
