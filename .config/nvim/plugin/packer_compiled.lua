@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/startup.nvim",
     url = "https://github.com/startup-nvim/startup.nvim"
   },
+  ["telescope-command-palette.nvim"] = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/telescope-command-palette.nvim",
+    url = "https://github.com/LinArcX/telescope-command-palette.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/telescope.nvim",
