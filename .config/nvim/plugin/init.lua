@@ -39,6 +39,15 @@ require('packer').startup(function()
         "williamboman/nvim-lsp-installer",
         requires = { "neovim/nvim-lspconfig" }
     } -- LSP installer
+    use {
+        'ms-jpq/coq_nvim', branch = "coq", run = 'python3 -m coq deps'
+    } -- Autocomplete
+    use {
+        'ms-jpq/coq.artifacts', branch = 'artifacts'
+    } -- Snippets for autocomplete
+    use {
+        'ms-jpq/coq.thirdparty'
+    } -- Third-party stuff for autocomplete
 end)
 
 require('lualine').setup()

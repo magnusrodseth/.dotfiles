@@ -74,6 +74,16 @@ _G.packer_plugins = {
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
+  coq_nvim = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",

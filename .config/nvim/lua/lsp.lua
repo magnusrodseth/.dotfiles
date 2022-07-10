@@ -42,23 +42,14 @@ local lsp_flags = {
 }
 
 -- Setup
-require('lspconfig')['pyright'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['tsserver'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['sumneko_lua'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['rust_analyzer'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-    -- Server-specific settings...
-    settings = {
-        ["rust-analyzer"] = {}
-    }
-}
+local lspconfig = require('lspconfig')
+local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer' }
+-- Automatically start COQ autcompletion
+vim.g.coq_settings = { auto_start = 'shut-up' }
+
+for _, lsp in ipairs(servers) do
+    lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
+        on_attach = on_attach,
+        flags = lsp_flags
+    }))
+end
