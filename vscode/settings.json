@@ -127,7 +127,7 @@
   // Don't display popup when hovering a blame line in GitLens
   "gitlens.hovers.currentLine.enabled": false,
 
-  "vim.vimrc.path": "$HOME/.config/nvim/init.vim",
+  "vim.vimrc.path": "$HOME/.config/nvim/init.lua",
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "vim.vimrc.enable": true,
   // Add relatvie line numbers
