@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sun Jul 10 20:31:02 2022
+# Make data base, printed on Sun Jul 10 20:50:57 2022
 
 # Variables
 
@@ -102,9 +102,6 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
- 
-make: *** No rule to make target `all'.  Stop.
-
 MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
@@ -159,7 +156,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 26667
+VSCODE_PID = 32743
 # variable set hash-table stats:
 # Load=73/1024=7%, Rehash=0, Collisions=2/94=2%
 
@@ -243,6 +240,8 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Jul 10 20:31:02 2022
+# Finished Make data base on Sun Jul 10 20:50:57 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+

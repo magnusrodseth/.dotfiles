@@ -24,6 +24,10 @@ require('packer').startup(function()
         },
     } -- Tree explorer
     use {
+        'romgrk/barbar.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons' }
+    } -- Tabs at the top of the page
+    use {
         "startup-nvim/startup.nvim",
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
         config = function()
