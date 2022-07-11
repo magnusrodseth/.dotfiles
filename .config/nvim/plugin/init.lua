@@ -49,6 +49,12 @@ require('packer').startup(function()
     use {
         'ms-jpq/coq.thirdparty'
     } -- Third-party stuff for autocomplete
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require('gitsigns').setup()
+        end
+    } -- Git signs for tracking changes in a file
 end)
 
 require('lualine').setup()

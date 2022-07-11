@@ -1,6 +1,5 @@
 vim.api.nvim_set_option("langmenu", "en_US")
 
--- vim.api.nvim_set_option("noerrorbells", true)
 vim.api.nvim_set_option("tabstop", 4)
 vim.api.nvim_set_option("softtabstop", 4)
 vim.api.nvim_set_option("backspace", "indent,eol,start")
