@@ -1,17 +1,11 @@
-vim.api.nvim_create_autocmd('BufWinEnter', {
-    pattern = '*',
-    callback = function()
-        if vim.bo.filetype == 'NvimTree' then
-            require 'bufferline.state'.set_offset(31, 'FileTree')
-        end
-    end
-})
+local nvim_tree_events = require('nvim-tree.events')
+local bufferline_state = require('bufferline.state')
 
-vim.api.nvim_create_autocmd('BufWinLeave', {
-    pattern = '*',
-    callback = function()
-        if vim.fn.expand('<afile>'):match('NvimTree') then
-            require 'bufferline.state'.set_offset(0)
-        end
-    end
-})
+nvim_tree_events.on_tree_open(function()
+    bufferline_state.set_offset(31, "File Tree")
+end)
+
+nvim_tree_events.on_tree_close(function()
+    bufferline_state.set_offset(0)
+end)
+

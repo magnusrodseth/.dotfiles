@@ -10,6 +10,7 @@ require('packer').startup(function()
     } -- Status bar at the bottom of the screen
     use "lukas-reineke/indent-blankline.nvim" -- Guide lines for tab spacing
     use 'navarasu/onedark.nvim' -- OneDark
+    use { "ellisonleao/gruvbox.nvim" } -- Gruvbox
     use 'kdheepak/lazygit.nvim' -- Calling LazyGit within Neovim
     use 'vim-utils/vim-man' -- Man pages
     use {
