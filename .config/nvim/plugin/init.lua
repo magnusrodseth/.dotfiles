@@ -55,8 +55,27 @@ require('packer').startup(function()
             require('gitsigns').setup()
         end
     } -- Git signs for tracking changes in a file
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    } -- Tree sitter
+    use {
+        'p00f/nvim-ts-rainbow',
+        requires = { 'nvim-treesitter/nvim-treesitter' }
+    }
 end)
 
 require('lualine').setup()
 require("nvim-tree").setup()
 require('nvim_comment').setup()
+require('nvim-treesitter.configs').setup({
+    -- A list of parser names, or "all"
+    ensure_installed = "all",
+    rainbow = {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = nil,
+        -- colors = {}, -- table of hex strings
+        -- termcolors = {} -- table of colour name strings
+    }
+})
