@@ -63,6 +63,9 @@ require('packer').startup(function()
         'p00f/nvim-ts-rainbow',
         requires = { 'nvim-treesitter/nvim-treesitter' }
     }
+    use {
+        'norcalli/nvim-colorizer.lua'
+    }
 end)
 
 require('lualine').setup()
@@ -79,3 +82,4 @@ require('nvim-treesitter.configs').setup({
         -- termcolors = {} -- table of colour name strings
     }
 })
+require('colorizer').setup()
