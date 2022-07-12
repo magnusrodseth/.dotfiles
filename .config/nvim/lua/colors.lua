@@ -1,8 +1,11 @@
-require('onedark').setup {
-    style = 'cool'
-}
+-- require('onedark').setup {
+--     style = 'cool'
+-- }
+--
+-- require('onedark').load()
 
-require('onedark').load()
+require("kanagawa").setup()
+require("kanagawa").load()
 
 -- require("gruvbox").setup({
 --     undercurl = true,

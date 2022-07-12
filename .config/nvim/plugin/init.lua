@@ -9,8 +9,9 @@ require('packer').startup(function()
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     } -- Status bar at the bottom of the screen
     use "lukas-reineke/indent-blankline.nvim" -- Guide lines for tab spacing
-    use 'navarasu/onedark.nvim' -- OneDark
-    use { "ellisonleao/gruvbox.nvim" } -- Gruvbox
+    use 'navarasu/onedark.nvim' -- OneDark theme
+    use { "ellisonleao/gruvbox.nvim" } -- Gruvbox theme
+    use "rebelot/kanagawa.nvim" -- Kanagawa theme
     use 'kdheepak/lazygit.nvim' -- Calling LazyGit within Neovim
     use 'vim-utils/vim-man' -- Man pages
     use {
