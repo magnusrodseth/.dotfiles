@@ -1,5 +1,7 @@
 require("lsp-format").setup {}
 
+vim.o.updatetime = 250
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -34,6 +36,22 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
     vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+
+    -- Display diagnostics using float, not to the right of the code
+    vim.api.nvim_create_autocmd("CursorHold", {
+        buffer = bufnr,
+        callback = function()
+            local opts = {
+                focusable = false,
+                close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+                border = 'rounded',
+                source = 'always',
+                prefix = ' ',
+                scope = 'cursor',
+            }
+            vim.diagnostic.open_float(nil, opts)
+        end
+    })
 end
 
 local lsp_flags = {
@@ -53,3 +71,10 @@ for _, lsp in ipairs(servers) do
         flags = lsp_flags
     }))
 end
+
+
+-- vim.diagnostic.config({
+--     virtual_text = false,
+--     signs = true,
+--     float = { border = "single" },
+-- })

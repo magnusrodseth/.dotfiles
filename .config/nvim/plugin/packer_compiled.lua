@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -120,6 +125,14 @@ _G.packer_plugins = {
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-code-action-menu"] = {
+    commands = { "CodeActionMenu" },
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
@@ -129,6 +142,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -207,6 +225,12 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\5\0\4\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0A\0\0\1K\0\1\0\24custom.startup_nvim\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file CodeActionMenu lua require("packer.load")({'nvim-code-action-menu'}, { cmd = "CodeActionMenu", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+time([[Defining lazy-load commands]], false)
+
 if should_profile then save_profiles() end
 
 end)

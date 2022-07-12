@@ -62,10 +62,18 @@ require('packer').startup(function()
     use {
         'p00f/nvim-ts-rainbow',
         requires = { 'nvim-treesitter/nvim-treesitter' }
-    }
+    } -- Colorize parenthesis, etc...
     use {
         'norcalli/nvim-colorizer.lua'
-    }
+    } -- Colorize hex codes
+    use {
+        'weilbith/nvim-code-action-menu',
+        cmd = 'CodeActionMenu',
+    } -- Code actions
+    use {
+        'kosayoda/nvim-lightbulb',
+        requires = 'antoinemadec/FixCursorHold.nvim',
+    } -- Visually inform if a code action is available
 end)
 
 require('lualine').setup()
@@ -83,3 +91,4 @@ require('nvim-treesitter.configs').setup({
     }
 })
 require('colorizer').setup()
+require('nvim-lightbulb').setup({ autocmd = { enabled = true } })
