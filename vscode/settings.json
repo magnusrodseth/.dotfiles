@@ -40,7 +40,7 @@
     "markdown": false,
     "c": true
   },
-  "workbench.colorTheme": "Tailwind Moon",
+  "workbench.colorTheme": "Kanagawa",
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.defaultFormatter": "mwpb.java-prettier-formatter"
