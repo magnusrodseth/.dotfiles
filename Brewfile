@@ -12,8 +12,6 @@ brew "python@3.9"
 brew "glib"
 # Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -24,8 +22,6 @@ brew "gobject-introspection"
 brew "krb5"
 # Library that provides automatic proxy configuration management
 brew "libproxy"
-# Java-based project management
-brew "maven"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Framework for layout and rendering of i18n text
@@ -39,13 +35,9 @@ brew "telnet"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
-brew "zsh-completions"
-# Amazon Lightsail CLI Extensions
 brew "aws/tap/lightsailctl"
 # Terraform
 brew "hashicorp/tap/terraform"
 cask "font-hack-nerd-font"
 # Full TeX Live distribution without GUI applications
 cask "mactex-no-gui"
-# Command-line shell and scripting language
-cask "powershell"
