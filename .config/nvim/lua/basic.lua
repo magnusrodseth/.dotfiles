@@ -9,10 +9,6 @@ vim.api.nvim_set_option("smartindent", true)
 vim.api.nvim_set_option("relativenumber", true)
 vim.api.nvim_set_option("number", true)
 
-vim.api.nvim_command('augroup Markdown')
-vim.api.nvim_command('autocmd FileType markdown :set wrap')
-vim.api.nvim_command('augroup END')
-
 vim.api.nvim_set_option("smartcase", true)
 vim.api.nvim_set_option("incsearch", true)
 

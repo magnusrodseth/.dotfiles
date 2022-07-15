@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
@@ -213,18 +218,28 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/vim-man",
     url = "https://github.com/vim-utils/vim-man"
+  },
+  ["vim-wrapping-softhard"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rwrapping\frequire\0" },
+    loaded = true,
+    path = "/Users/magnusrodseth/.local/share/nvim/site/pack/packer/start/vim-wrapping-softhard",
+    url = "https://github.com/andrewferrier/vim-wrapping-softhard"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\5\0\4\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0A\0\0\1K\0\1\0\24custom.startup_nvim\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
+-- Config for: vim-wrapping-softhard
+time([[Config for vim-wrapping-softhard]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rwrapping\frequire\0", "config", "vim-wrapping-softhard")
+time([[Config for vim-wrapping-softhard]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

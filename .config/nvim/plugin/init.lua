@@ -75,6 +75,12 @@ require('packer').startup(function()
         'kosayoda/nvim-lightbulb',
         requires = 'antoinemadec/FixCursorHold.nvim',
     } -- Visually inform if a code action is available
+    use {
+        "andrewferrier/vim-wrapping-softhard",
+        config = function()
+            require("wrapping").setup()
+        end,
+    } -- Wrap text
 end)
 
 require('lualine').setup()
