@@ -1,6 +1,5 @@
 local map = require("keymaps.utils").map
 
-map("n", ",", "GA<CR>")
 map("n", "<leader>h", ":wincmd h<CR>")
 map("n", "<leader>j", ":wincmd j<CR>")
 map("n", "<leader>k", ":wincmd k<CR>")

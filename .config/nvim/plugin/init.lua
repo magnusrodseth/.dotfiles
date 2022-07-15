@@ -81,6 +81,11 @@ require('packer').startup(function()
             require("wrapping").setup()
         end,
     } -- Wrap text
+    use { 'kevinhwang91/nvim-fFHighlight',
+        config = function()
+            require("fFHighlight").setup()
+        end,
+    } -- Highlight on 'f' and 'F'
 end)
 
 require('lualine').setup()
