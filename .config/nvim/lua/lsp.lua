@@ -62,19 +62,34 @@ local lsp_flags = {
 -- Setup
 local lspconfig = require('lspconfig')
 local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer' }
+
 -- Automatically start COQ autcompletion
 vim.g.coq_settings = { auto_start = 'shut-up' }
 
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
         on_attach = on_attach,
-        flags = lsp_flags
+        flags = lsp_flags,
+        settings = {
+            ["rust-analyzer"] = {
+                assist = {
+                    importEnforceGranularity = true,
+                    importPrefix = "crate"
+                },
+                cargo = {
+                    allFeatures = true
+                },
+                checkOnSave = {
+                    -- default: `cargo check`
+                    command = "clippy"
+                },
+            },
+            inlayHints = {
+                lifetimeElisionHints = {
+                    enable = true,
+                    useParameterNames = true
+                },
+            },
+        }
     }))
 end
-
-
--- vim.diagnostic.config({
---     virtual_text = false,
---     signs = true,
---     float = { border = "single" },
--- })

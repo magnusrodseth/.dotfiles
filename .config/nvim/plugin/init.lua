@@ -6,7 +6,10 @@ require('packer').startup(function()
     use 'tmsvg/pear-tree' -- Pair parenthesis
     use {
         'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+        config = function()
+            require('lualine').setup()
+        end
     } -- Status bar at the bottom of the screen
     use "lukas-reineke/indent-blankline.nvim" -- Guide lines for tab spacing
     use 'navarasu/onedark.nvim' -- OneDark theme
@@ -18,12 +21,20 @@ require('packer').startup(function()
         'nvim-telescope/telescope.nvim',
         requires = { { 'nvim-lua/plenary.nvim' } }
     } -- Telescope fuzzy finder
-    use "terrortylor/nvim-comment" -- Toggle comments
+    use {
+        "terrortylor/nvim-comment",
+        config = function()
+            require('nvim_comment').setup()
+        end
+    } -- Toggle comments       
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
             'kyazdani42/nvim-web-devicons', -- optional, for file icons
         },
+        config = function()
+            require("nvim-tree").setup()
+        end
     } -- Tree explorer
     use {
         'romgrk/barbar.nvim',
@@ -58,14 +69,32 @@ require('packer').startup(function()
     } -- Git signs for tracking changes in a file
     use {
         'nvim-treesitter/nvim-treesitter',
-        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+        run = function()
+            require('nvim-treesitter.install').update({ with_sync = true })
+        end,
+        config = function()
+            require('nvim-treesitter.configs').setup({
+                -- A list of parser names, or "all"
+                ensure_installed = "all",
+                rainbow = {
+                    enable = true,
+                    extended_mode = true,
+                    max_file_lines = nil,
+                    -- colors = {}, -- table of hex strings
+                    -- termcolors = {} -- table of colour name strings
+                }
+            })
+        end
     } -- Tree sitter
     use {
         'p00f/nvim-ts-rainbow',
         requires = { 'nvim-treesitter/nvim-treesitter' }
     } -- Colorize parenthesis, etc...
     use {
-        'norcalli/nvim-colorizer.lua'
+        'norcalli/nvim-colorizer.lua',
+        config = function()
+            require('colorizer').setup()
+        end
     } -- Colorize hex codes
     use {
         'weilbith/nvim-code-action-menu',
@@ -74,6 +103,13 @@ require('packer').startup(function()
     use {
         'kosayoda/nvim-lightbulb',
         requires = 'antoinemadec/FixCursorHold.nvim',
+        config = function()
+            require('nvim-lightbulb').setup({
+                autocmd = {
+                    enabled = true
+                }
+            })
+        end
     } -- Visually inform if a code action is available
     use {
         "andrewferrier/vim-wrapping-softhard",
@@ -87,20 +123,3 @@ require('packer').startup(function()
         end,
     } -- Highlight on 'f' and 'F'
 end)
-
-require('lualine').setup()
-require("nvim-tree").setup()
-require('nvim_comment').setup()
-require('nvim-treesitter.configs').setup({
-    -- A list of parser names, or "all"
-    ensure_installed = "all",
-    rainbow = {
-        enable = true,
-        extended_mode = true,
-        max_file_lines = nil,
-        -- colors = {}, -- table of hex strings
-        -- termcolors = {} -- table of colour name strings
-    }
-})
-require('colorizer').setup()
-require('nvim-lightbulb').setup({ autocmd = { enabled = true } })
