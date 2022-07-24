@@ -117,9 +117,19 @@ require('packer').startup(function()
             require("wrapping").setup()
         end,
     } -- Wrap text
-    use { 'kevinhwang91/nvim-fFHighlight',
+    use {
+        'kevinhwang91/nvim-fFHighlight',
         config = function()
             require("fFHighlight").setup()
         end,
     } -- Highlight on 'f' and 'F'
+    use {
+        'simrat39/rust-tools.nvim',
+        branch = 'modularize_and_inlay_rewrite',
+        requires = {
+            'neovim/nvim-lspconfig',
+            'nvim-lua/plenary.nvim',
+            'mfussenegger/nvim-dap'
+        },
+    } -- Rust tools
 end)

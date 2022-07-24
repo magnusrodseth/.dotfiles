@@ -87,9 +87,15 @@ for _, lsp in ipairs(servers) do
             inlayHints = {
                 lifetimeElisionHints = {
                     enable = true,
-                    useParameterNames = true
+                    useParameterNames = true,
+                    only_current_line = false,
+                    show_parameter_hints = true,
                 },
             },
         }
     }))
 end
+
+
+-- This must be setup after the rest of the LSP config
+require('rust-tools').setup(require 'custom.rust_tools')
