@@ -59,16 +59,17 @@ local lsp_flags = {
     debounce_text_changes = 150,
 }
 
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 -- Setup
 local lspconfig = require('lspconfig')
 local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer' }
 
 -- Automatically start COQ autcompletion
-vim.g.coq_settings = { auto_start = 'shut-up' }
-
 for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
+    lspconfig[lsp].setup({
         on_attach = on_attach,
+        capabilities = capabilities,
         flags = lsp_flags,
         settings = {
             ["rust-analyzer"] = {
@@ -93,7 +94,7 @@ for _, lsp in ipairs(servers) do
                 },
             },
         }
-    }))
+    })
 end
 
 

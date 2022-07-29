@@ -53,15 +53,6 @@ require('packer').startup(function()
         requires = { "neovim/nvim-lspconfig" }
     } -- LSP installer
     use {
-        'ms-jpq/coq_nvim', branch = "coq", run = 'python3 -m coq deps'
-    } -- Autocomplete
-    use {
-        'ms-jpq/coq.artifacts', branch = 'artifacts'
-    } -- Snippets for autocomplete
-    use {
-        'ms-jpq/coq.thirdparty'
-    } -- Third-party stuff for autocomplete
-    use {
         'lewis6991/gitsigns.nvim',
         config = function()
             require('gitsigns').setup()
@@ -132,4 +123,19 @@ require('packer').startup(function()
             'mfussenegger/nvim-dap'
         },
     } -- Rust tools
+    use {
+        'hrsh7th/nvim-cmp',
+        requires = {
+            'neovim/nvim-lspconfig',
+            'hrsh7th/cmp-nvim-lsp',
+            'hrsh7th/cmp-buffer',
+            'hrsh7th/cmp-path',
+            'hrsh7th/cmp-cmdline',
+            'L3MON4D3/LuaSnip',
+            'saadparwaiz1/cmp_luasnip'
+        },
+        config = function()
+            require('cmp').setup(require('custom.nvim_cmp'))
+        end
+    } -- Autocomplete
 end)
