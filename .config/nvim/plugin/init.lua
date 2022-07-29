@@ -144,4 +144,19 @@ require('packer').startup(function()
             'L3MON4D3/LuaSnip'
         }
     }
+    use {
+        'tzachar/cmp-tabnine',
+        run = './install.sh',
+        requires = 'hrsh7th/nvim-cmp',
+        config = function()
+            require('cmp_tabnine.config'):setup({
+                max_lines = 1000;
+                max_num_results = 3;
+                sort = true;
+                run_on_every_keystroke = true;
+                snippet_placeholder = '..';
+                show_prediction_strength = false;
+            })
+        end
+    }
 end)
