@@ -15,3 +15,5 @@
     k = !"open -na '/Applications/GitKraken.app/Contents/MacOS/GitKraken' --args -p $(pwd)"
     ; ui - lazygit
     ui = !"/usr/local/bin/lazygit"
+    ; fpo - fetch --prune origin
+    fpo = fetch --prune origin
