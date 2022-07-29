@@ -138,4 +138,10 @@ require('packer').startup(function()
             require('cmp').setup(require('custom.nvim_cmp'))
         end
     } -- Autocomplete
+    use {
+        'rafamadriz/friendly-snippets',
+        requires = {
+            'L3MON4D3/LuaSnip'
+        }
+    }
 end)
