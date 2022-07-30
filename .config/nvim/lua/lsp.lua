@@ -1,5 +1,3 @@
-require("lsp-format").setup {}
-
 vim.o.updatetime = 250
 
 -- Mappings.
@@ -13,8 +11,6 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
-    require "lsp-format".on_attach(client)
-
     -- Enable completion triggered by <c-x><c-o>
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -54,6 +50,7 @@ local on_attach = function(client, bufnr)
     })
 end
 
+
 local lsp_flags = {
     -- This is the default in Nvim 0.7+
     debounce_text_changes = 150,
@@ -83,14 +80,6 @@ for _, lsp in ipairs(servers) do
                 checkOnSave = {
                     -- default: `cargo check`
                     command = "clippy"
-                },
-            },
-            inlayHints = {
-                lifetimeElisionHints = {
-                    enable = true,
-                    useParameterNames = true,
-                    only_current_line = false,
-                    show_parameter_hints = true,
                 },
             },
         }

@@ -14,3 +14,5 @@ vim.api.nvim_set_option("incsearch", true)
 
 vim.api.nvim_set_option("colorcolumn", "90")
 vim.cmd("highlight ColorColumn ctermbg=0 guibg=lightgrey")
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)]]
