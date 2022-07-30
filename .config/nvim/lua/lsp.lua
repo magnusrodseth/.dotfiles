@@ -60,7 +60,30 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 -- Setup
 local lspconfig = require('lspconfig')
-local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer', 'gopls' }
+local servers = {
+    'clangd',
+    'cmake',
+    'cssls',
+    'dockerls',
+    'eslint',
+    'gopls',
+    'graphql',
+    'html',
+    'jdtls',
+    'jsonls',
+    'kotlin_language_server',
+    'lemminx',
+    'ltex',
+    'marksman',
+    'prismals',
+    'pyright',
+    'rust_analyzer',
+    'sumneko_lua',
+    'svelte',
+    'tailwindcss',
+    'tsserver',
+    'yamlls'
+}
 
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup({
