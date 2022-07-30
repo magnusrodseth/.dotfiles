@@ -1,3 +1,6 @@
+local lsp_format = require('lsp-format')
+lsp_format.setup {}
+
 vim.o.updatetime = 250
 
 -- Mappings.
@@ -11,6 +14,8 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
+    lsp_format.on_attach(client)
+
     -- Enable completion triggered by <c-x><c-o>
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -59,7 +64,7 @@ local lsp_flags = {
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- Setup
-local lspconfig = require('lspconfig')
+local lsp_config = require('lspconfig')
 local servers = {
     'clangd',
     'cmake',
@@ -86,7 +91,7 @@ local servers = {
 }
 
 for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup({
+    lsp_config[lsp].setup({
         on_attach = on_attach,
         capabilities = capabilities,
         flags = lsp_flags,
