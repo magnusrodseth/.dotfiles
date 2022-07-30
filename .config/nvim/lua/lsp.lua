@@ -60,9 +60,8 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 -- Setup
 local lspconfig = require('lspconfig')
-local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer' }
+local servers = { 'pyright', 'tsserver', 'sumneko_lua', 'rust_analyzer', 'gopls' }
 
--- Automatically start COQ autcompletion
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup({
         on_attach = on_attach,
@@ -88,4 +87,4 @@ end
 
 
 -- This must be setup after the rest of the LSP config
-require('rust-tools').setup(require 'custom.rust_tools')
+require('rust-tools').setup({})
