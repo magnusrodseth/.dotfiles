@@ -17,40 +17,35 @@ Clone the repository into the `~` directory, in order for the symlinks below to 
 # Install applications and tools using Homebrew
 sh brew.sh
 
+# Run Brewfile
+brew bundle
+
 # Bootstrap shell configuration
 sh bootstrap.sh
+
+# Add symlinks
+sh symlinks.sh
+
+# Navigate to the nvim configuration directory
+cd ~/.config/nvim
+
+# Clean and install Neovim dependencies
+nvim +PackerSync
+```
+
+To ensure that the [`Brewfile`](./Brewfile) is up to date, remember to do the following:
+
+```sh
+# Update all package definitions
+brew update
+
+# Write currently installed formulae/casks/etc... to Brewfile
+brew bundle dump --global
 ```
 
 ## Downloading applications that requires using App Store
 
 [Click here](./APP_STORE_APPLICATIONS.md) to read more.
-
-## Adding symlinks
-
-```sh
-# Add symlinks
-sh symlinks.sh
-```
-
-## Sourcing the `nvim` configuration
-
-```sh
-# Navigate to the nvim configuration directory
-cd ~/.config/nvim
-
-# Open the init.vim file
-vim init.vim
-```
-
-When in the `init.vim` file, type the following commands:
-
-```vim
-" Install plugins
-:PlugInstall
-
-" Source the configuration
-:source %
-```
 
 ## Developer Information 🙋🏼‍♂️
 
