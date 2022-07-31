@@ -34,7 +34,6 @@ local on_attach = function(client, buffer_number)
     end, buffer_options)
     vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, buffer_options)
     vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, buffer_options)
-    vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, buffer_options)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, buffer_options)
     vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, buffer_options)
 
