@@ -111,7 +111,3 @@ for _, lsp in ipairs(servers) do
         }
     })
 end
-
-
--- This must be setup after the rest of the LSP config
-require('rust-tools').setup({})

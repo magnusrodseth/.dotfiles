@@ -115,15 +115,6 @@ require('packer').startup(function()
         end,
     } -- Highlight on 'f' and 'F'
     use {
-        'simrat39/rust-tools.nvim',
-        branch = 'modularize_and_inlay_rewrite',
-        requires = {
-            'neovim/nvim-lspconfig',
-            'nvim-lua/plenary.nvim',
-            'mfussenegger/nvim-dap'
-        },
-    } -- Rust tools
-    use {
         'hrsh7th/nvim-cmp',
         requires = {
             'neovim/nvim-lspconfig',
