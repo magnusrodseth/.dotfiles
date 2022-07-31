@@ -45,6 +45,7 @@ require('packer').startup(function()
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
         config = function()
             require "startup".setup(require "custom.startup_nvim")
+
         end
     } -- Startup screen
     use "lukas-reineke/lsp-format.nvim" -- Format
