@@ -158,3 +158,5 @@ export GITHUB_PACKAGES_TOKEN="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"
 
 
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

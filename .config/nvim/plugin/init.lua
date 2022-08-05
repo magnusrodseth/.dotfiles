@@ -135,7 +135,7 @@ require('packer').startup(function()
     requires = {
       'L3MON4D3/LuaSnip'
     }
-  }
+  } -- Snippets
   use {
     'tzachar/cmp-tabnine',
     run = './install.sh',
@@ -150,12 +150,15 @@ require('packer').startup(function()
         show_prediction_strength = false;
       })
     end
-  }
+  } -- Tabnine
   use {
     'f-person/git-blame.nvim',
     config = function()
       vim.g.gitblame_message_template = '<author> • <date>'
       vim.g.gitblame_date_format = '%r'
     end
-  }
+  } -- Git blame
+  use {
+    'onsails/lspkind.nvim',
+  } -- 
 end)
