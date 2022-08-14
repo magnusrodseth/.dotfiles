@@ -173,4 +173,12 @@ require('packer').startup(function()
   use {
     'stevearc/dressing.nvim'
   } -- Improve vim.ui interface
+  use {
+    'saecki/crates.nvim',
+    event = { "BufRead Cargo.toml" },
+    requires = { { 'nvim-lua/plenary.nvim' } },
+    config = function()
+      require('crates').setup()
+    end,
+  } -- Cargo dependency management
 end)
