@@ -160,3 +160,10 @@ export GITHUB_PACKAGES_TOKEN="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"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# bun completions
+[ -s "/Users/magnusrodseth/.bun/_bun" ] && source "/Users/magnusrodseth/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
