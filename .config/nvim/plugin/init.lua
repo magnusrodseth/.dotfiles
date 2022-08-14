@@ -182,10 +182,19 @@ require('packer').startup(function()
     end,
   } -- Cargo dependency management
   use {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
+    "petertriho/nvim-scrollbar",
     config = function()
-      require("todo-comments").setup {}
+      require("scrollbar").setup()
     end
-  } -- Highlight and search important comments
+  } -- Scrollbar with diagnostics
+  use {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require 'nvim-treesitter.configs'.setup {
+        autotag = {
+          enable = true,
+        }
+      }
+    end
+  } -- Auto tag
 end)
