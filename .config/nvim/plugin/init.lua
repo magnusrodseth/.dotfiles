@@ -181,4 +181,11 @@ require('packer').startup(function()
       require('crates').setup()
     end,
   } -- Cargo dependency management
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {}
+    end
+  } -- Highlight and search important comments
 end)
