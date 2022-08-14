@@ -166,5 +166,11 @@ require('packer').startup(function()
     config = function()
       require("nvim-surround").setup()
     end
-  }
+  } -- Surround operations
+  use {
+    'sunjon/shade.nvim',
+  } -- Dim inactive windows
+  use {
+    'stevearc/dressing.nvim'
+  } -- Improve vim.ui interface
 end)
