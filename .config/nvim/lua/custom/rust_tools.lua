@@ -13,25 +13,25 @@ local options = {
       vim.keymap.set("n", "<C-p>", rust_tools.hover_actions.hover_actions, { buffer = bufnr })
     end,
     settings = {
-      ["rust-analyzer"] = {
-        assist = {
-          importEnforceGranularity = true,
-          importPrefix = "crate"
-        },
-        cargo = {
-          allFeatures = true
-        },
-        checkOnSave = {
-          -- default: `cargo check`
-          command = "clippy"
-        },
-        inlayHints = {
-          lifetimeElisionHints = {
-            enable = true,
-            useParameterNames = true
-          },
-        },
-      },
+      -- ["rust-analyzer"] = {
+      --   assist = {
+      --     importEnforceGranularity = true,
+      --     importPrefix = "crate"
+      --   },
+      --   cargo = {
+      --     allFeatures = true
+      --   },
+      --   checkOnSave = {
+      --     -- default: `cargo check`
+      --     command = "clippy"
+      --   },
+      --   inlayHints = {
+      --     lifetimeElisionHints = {
+      --       enable = true,
+      --       useParameterNames = true
+      --     },
+      --   },
+      -- },
     }
   }
 }
