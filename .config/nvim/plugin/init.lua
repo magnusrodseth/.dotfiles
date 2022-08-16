@@ -197,4 +197,14 @@ require('packer').startup(function()
       }
     end
   } -- Auto tag
+  use {
+    'simrat39/rust-tools.nvim',
+    requires = {
+      'neovim/nvim-lspconfig',
+      'nvim-lua/plenary.nvim',
+    },
+    config = function()
+      require("rust-tools").setup(require('custom.rust_tools'))
+    end
+  }
 end)
