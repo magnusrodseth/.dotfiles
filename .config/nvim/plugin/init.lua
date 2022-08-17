@@ -19,7 +19,7 @@ require('packer').startup(function()
   use 'vim-utils/vim-man' -- Man pages
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+    requires = { { 'nvim-lua/plenary.nvim' } },
   } -- Telescope fuzzy finder
   use {
     "terrortylor/nvim-comment",
@@ -207,4 +207,10 @@ require('packer').startup(function()
   --     require("rust-tools").setup(require('custom.rust_tools'))
   --   end
   -- }
+  use {
+    'ThePrimeagen/harpoon',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
 end)
