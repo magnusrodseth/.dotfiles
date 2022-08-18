@@ -212,5 +212,8 @@ require('packer').startup(function()
     requires = {
       'nvim-lua/plenary.nvim'
     }
+  } -- Harpoon and mark files for quick navigation
+  use {
+    'github/copilot.vim'
   }
 end)
