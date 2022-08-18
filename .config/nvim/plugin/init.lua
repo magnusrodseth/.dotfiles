@@ -216,4 +216,10 @@ require('packer').startup(function()
   use {
     'github/copilot.vim'
   }
+  use {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {}
+    end
+  }
 end)
