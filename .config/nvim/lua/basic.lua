@@ -8,6 +8,7 @@ vim.api.nvim_set_option("expandtab", true)
 vim.api.nvim_set_option("smartindent", true)
 vim.api.nvim_set_option("relativenumber", true)
 vim.api.nvim_set_option("number", true)
+vim.api.nvim_set_option("wrap", true)
 
 vim.api.nvim_set_option("smartcase", true)
 vim.api.nvim_set_option("incsearch", true)

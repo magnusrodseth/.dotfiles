@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias intel="idea"
 alias vim="nvim"
+alias vi="nvim"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 
@@ -155,10 +156,6 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 export GITHUB_PACKAGES_TOKEN="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"
-
-
-
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # bun completions
