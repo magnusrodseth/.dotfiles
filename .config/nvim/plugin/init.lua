@@ -215,11 +215,11 @@ require('packer').startup(function()
   } -- Harpoon and mark files for quick navigation
   use {
     'github/copilot.vim'
-  }
+  } -- GitHub Copilot
   use {
     "folke/zen-mode.nvim",
     config = function()
       require("zen-mode").setup {}
     end
-  }
+  } -- Zen mode
 end)
