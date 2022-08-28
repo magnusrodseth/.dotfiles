@@ -34,7 +34,7 @@
   "java.semanticHighlighting.enabled": true,
   "todohighlight.keywords": [],
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "yaml": false,
     "plaintext": false,
     "markdown": false,
@@ -65,7 +65,7 @@
     "editor.suggestSelection": "recentlyUsedByPrefix"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "dart.flutterSdkPath": "/Users/magnusrodseth/Developer/flutter",
+  "dart.flutterSdkPath": "/Users/magnusrodseth/flutter",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

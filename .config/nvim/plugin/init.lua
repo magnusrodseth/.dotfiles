@@ -20,6 +20,15 @@ require('packer').startup(function()
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } },
+    config = function()
+      require("telescope").setup({
+        pickers = {
+          find_files = {
+            hidden = true
+          }
+        }
+      })
+    end
   } -- Telescope fuzzy finder
   use {
     "terrortylor/nvim-comment",
@@ -85,7 +94,10 @@ require('packer').startup(function()
   use {
     'norcalli/nvim-colorizer.lua',
     config = function()
-      require('colorizer').setup()
+      require('colorizer').setup({
+        'css';
+        'javascript';
+      })
     end
   } -- Colorize hex codes
   use {
