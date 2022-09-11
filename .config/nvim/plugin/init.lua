@@ -42,7 +42,11 @@ require('packer').startup(function()
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
     config = function()
-      require("nvim-tree").setup()
+      require("nvim-tree").setup({
+        filters = {
+          dotfiles = true
+        }
+      })
     end
   } -- Tree explorer
   use {
