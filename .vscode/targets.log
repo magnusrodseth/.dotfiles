@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Sun Jul 10 20:50:57 2022
+# Make data base, printed on Mon Oct 24 21:02:29 2022
 
 # Variables
 
@@ -15,6 +16,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+LC_CTYPE = UTF-8
 # environment
 NVM_INC = /Users/magnusrodseth/.nvm/versions/node/v16.14.2/include/node
 # automatic
@@ -38,23 +43,25 @@ MAKEFILE_LIST :=
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/magnusrodseth/.dotfiles
 # environment
-PATH = /Users/magnusrodseth/google-cloud-sdk/bin:/Users/magnusrodseth/.nvm/versions/node/v16.14.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/apache-maven-3.8.3/bin:/Library/TeX/texbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/magnusrodseth/.cargo/bin
+PATH = /Users/magnusrodseth/.bun/bin:/Users/magnusrodseth/.yarn/bin:/Users/magnusrodseth/.config/yarn/global/node_modules/.bin:/Users/magnusrodseth/google-cloud-sdk/bin:/Users/magnusrodseth/.nvm/versions/node/v16.14.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/apache-maven-3.8.3/bin:/usr/local/Cellar/llvm/14.0.6_1/bin:/Library/TeX/texbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/magnusrodseth/Library/Android/sdk/platform-tools:/Users/magnusrodseth/.cargo/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/magnusrodseth/.nvm/versions/node/v16.14.2/bin
 # environment
-LaunchInstanceID = 4DDB658C-C56E-4563-9145-7C9BD4249F1B
+LaunchInstanceID = D2A76466-D148-4F84-BA02-604294400054
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# environment
+ANDROID_HOME = /Users/magnusrodseth/Library/Android/sdk
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = magnusrodseth
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tETAme4Gzm/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.FDEQjy680e/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -68,9 +75,11 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/magnusrodseth
 # default
-MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/magnusrodseth/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/magnusrodseth/Library/Application Support/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
 # environment
 LOGNAME = magnusrodseth
 # environment
@@ -85,24 +94,32 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = magnusrodseth
 # makefile
 .DEFAULT_GOAL := 
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t0p0:25129189-8319-480A-8D90-EAF7C910A71F
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -110,9 +127,11 @@ TMPDIR = /var/folders/6f/f4jmdnpx54s3hmfy9g0jlvch0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/magnusrodseth/Library/Application Support/Code/1.69.0-main.sock
+VSCODE_IPC_HOOK = /Users/magnusrodseth/Library/Application Support/Code/1.72.2-main.sock
 # environment
 MallocNanoZone = 0
+# environment
+BUN_INSTALL = /Users/magnusrodseth/.bun
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -120,13 +139,21 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
 NVM_DIR = /Users/magnusrodseth/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.80608484.80608490
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.99935918.99935924.A30086C0-474E-46E8-AAB5-16C3D2BE2574
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
+# environment
+ITERM_SESSION_ID = w0t0p0:25129189-8319-480A-8D90-EAF7C910A71F
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
@@ -136,13 +163,15 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
+ITERM_PROFILE = magnusrodseth
+# environment
 EDITOR = /usr/local/bin/nvim
 # environment
 PAGER = less
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a3
+SECURITYSESSIONID = 186a6
 # automatic
 ^F = $(notdir $^)
 # default
@@ -156,9 +185,11 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 32743
+TERM = xterm-256color
+# environment
+VSCODE_PID = 85843
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=2/94=2%
+# Load=88/1024=9%, Rehash=0, Collisions=5/109=5%
 
 # Pattern-specific Variable Values
 
@@ -166,9 +197,9 @@ VSCODE_PID = 32743
 
 # Directories
 
-# . (device 16777223, inode 52999559): 26 files, no impossibilities.
+# . (device 16777223, inode 52999559): 25 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 25 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -240,7 +271,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Jul 10 20:50:57 2022
+# Finished Make data base on Mon Oct 24 21:02:29 2022
 
  
 make: *** No rule to make target `all'.  Stop.

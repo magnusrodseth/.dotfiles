@@ -50,7 +50,7 @@
   "editor.accessibilitySupport": "off",
   "editor.inlineSuggest.enabled": true,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "java.configuration.checkProjectSettingsExclusions": false,
   "editor.fontSize": 16,
@@ -118,7 +118,7 @@
   "eslint.validate": ["javascript", "typescript"],
   "svelte.enable-ts-plugin": true,
   "[svelte]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -198,5 +198,9 @@
         "%DOC%"
       ]
     }
-  ]
+  ],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "svelte.plugin.svelte.note-new-transformation": false
 }
