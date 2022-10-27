@@ -37,7 +37,7 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
     "c": true
   },
   "workbench.colorTheme": "Kanagawa",
