@@ -35,7 +35,7 @@ require('packer').startup(function()
     config = function()
       require('nvim_comment').setup()
     end
-  } -- Toggle comments       
+  } -- Toggle comments
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -75,7 +75,8 @@ require('packer').startup(function()
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
-      require('nvim-treesitter.install').update({ with_sync = true })
+      local ts_udpate = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_udpate()
     end,
     config = function()
       require('nvim-treesitter.configs').setup({
