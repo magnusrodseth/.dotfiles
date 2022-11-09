@@ -116,6 +116,7 @@ source $ZSH/oh-my-zsh.sh
 alias intel="idea"
 alias vim="nvim"
 alias vi="nvim"
+alias bim="nvim"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 alias tf="terraform"
