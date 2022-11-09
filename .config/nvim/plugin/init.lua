@@ -51,7 +51,7 @@ require('packer').startup(function()
   } -- Tree explorer
   use {
     'romgrk/barbar.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' }
+    requires = 'kyazdani42/nvim-web-devicons'
   } -- Tabs at the top of the page
   use {
     "startup-nvim/startup.nvim",
@@ -247,5 +247,12 @@ require('packer').startup(function()
     config = function()
       require('treesitter-context').setup {}
     end
-  }
+  } -- Treesitter context
+  use {
+    'folke/trouble.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require("trouble").setup {}
+    end
+  } -- Trouble (diagnostics)
 end)
