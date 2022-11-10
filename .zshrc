@@ -126,6 +126,9 @@ alias lg="l --git"
 alias ls="exa"
 alias ll="exa -l"
 alias cp='xcp'
+alias find="fd"
+alias ps="procs"
+alias top="btm"
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"
