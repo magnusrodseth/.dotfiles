@@ -120,6 +120,10 @@ alias bim="nvim"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 alias tf="terraform"
+alias cat="bat"
+alias l="exa --long -h"
+alias lg="l --git"
+alias ls="exa"
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"
