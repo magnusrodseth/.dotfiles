@@ -170,3 +170,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export STARSHIP_CONFIG=~/.dotfiles/.config/starship/starship.toml
+
+
+eval "$(starship init zsh)"
+
