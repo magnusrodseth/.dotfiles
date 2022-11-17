@@ -34,3 +34,9 @@ diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 
 [nodejs]
 disabled = true
+
+[rust]
+disabled = true
+
+[lua]
+disabled = true
