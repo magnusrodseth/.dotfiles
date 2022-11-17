@@ -42,17 +42,18 @@ require('packer').startup(function()
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
     config = function()
-      require("nvim-tree").setup({
-        filters = {
-          dotfiles = true
-        }
-      })
+      require("nvim-tree").setup()
     end
   } -- Tree explorer
   use {
     'romgrk/barbar.nvim',
     requires = 'kyazdani42/nvim-web-devicons'
   } -- Tabs at the top of the page
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "v3.*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
   use {
     "startup-nvim/startup.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
