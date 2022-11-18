@@ -5,8 +5,11 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use 'tmsvg/pear-tree' -- Pair parenthesis
   use {
+    'nvim-tree/nvim-web-devicons',
+  }
+  use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true },
     config = function()
       require('lualine').setup(require('custom.lualine'))
     end
@@ -37,9 +40,9 @@ require('packer').startup(function()
     end
   } -- Toggle comments
   use {
-    'kyazdani42/nvim-tree.lua',
+    'nvim-tree/nvim-tree.lua',
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
     config = function()
       require("nvim-tree").setup()
@@ -47,13 +50,8 @@ require('packer').startup(function()
   } -- Tree explorer
   use {
     'romgrk/barbar.nvim',
-    requires = 'kyazdani42/nvim-web-devicons'
-  } -- Tabs at the top of the page
-  use {
-    'akinsho/bufferline.nvim',
-    tag = "v3.*",
     requires = 'nvim-tree/nvim-web-devicons'
-  }
+  } -- Tabs at the top of the page
   use {
     "startup-nvim/startup.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
@@ -251,7 +249,7 @@ require('packer').startup(function()
   } -- Treesitter context
   use {
     'folke/trouble.nvim',
-    requires = 'kyazdani42/nvim-web-devicons',
+    requires = 'nvim-tree/nvim-web-devicons',
     config = function()
       require("trouble").setup {}
     end
