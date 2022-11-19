@@ -1,6 +1,12 @@
 local use = require('packer').use
 
 require('packer').startup(function()
+  use {
+    'williamboman/mason.nvim',
+    config = function()
+      require("mason").setup()
+    end
+  } -- Install LSP, linters, etc...
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use 'tmsvg/pear-tree' -- Pair parenthesis

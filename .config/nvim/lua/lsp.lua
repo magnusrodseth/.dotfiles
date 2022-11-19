@@ -72,7 +72,6 @@ local servers = {
   'gopls',
   'jdtls',
   'marksman',
-  'remark_ls',
   'sumneko_lua',
   'svelte',
   'tailwindcss',
