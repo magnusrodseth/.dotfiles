@@ -6,8 +6,10 @@ vim.o.updatetime = 250
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local options = { noremap = true, silent = true }
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, options)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, options)
+-- Jump to previous diagnostic, and center cursor
+vim.keymap.set('n', '<leader>dk', vim.diagnostic.goto_prev, options)
+-- Jump to next diagnostic, and center cursor
+vim.keymap.set('n', '<leader>dj', vim.diagnostic.goto_next, options)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, options)
 
 -- Use an on_attach function to only map the following keys
