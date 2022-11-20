@@ -260,4 +260,11 @@ require('packer').startup(function()
       require("trouble").setup {}
     end
   } -- Trouble (diagnostics)
+  use {
+    'MaximilianLloyd/ascii.nvim',
+    requires = 'MunifTanjim/nui.nvim',
+    config = function()
+      require('ascii').setup()
+    end
+  }
 end)
