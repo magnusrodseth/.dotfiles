@@ -263,8 +263,9 @@ require('packer').startup(function()
   use {
     'MaximilianLloyd/ascii.nvim',
     requires = 'MunifTanjim/nui.nvim',
-    config = function()
-      require('ascii').setup()
-    end
+  }
+  use {
+    'mg979/vim-visual-multi',
+    branch = 'master',
   }
 end)
