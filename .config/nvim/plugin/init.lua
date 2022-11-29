@@ -263,9 +263,22 @@ require('packer').startup(function()
   use {
     'MaximilianLloyd/ascii.nvim',
     requires = 'MunifTanjim/nui.nvim',
-  }
+  } -- ASCII art
   use {
     'mg979/vim-visual-multi',
     branch = 'master',
+  } -- Multiple cursors
+  use {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    config = function()
+      require('nvim-treesitter.configs').setup {
+        context_commentstring = {
+          enable = true,
+        }
+      }
+    end
+  } -- Comment with treesitter context
+  use {
+    'mbbill/undotree'
   }
 end)

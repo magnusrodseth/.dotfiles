@@ -50,6 +50,7 @@ alias cp='xcp'
 alias find="fd"
 alias ps="procs"
 alias top="btm"
+alias pm="pnpm"
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"
