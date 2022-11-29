@@ -2,6 +2,7 @@ local rust_tools = require("rust-tools")
 local options = {
   tools = {
     inlay_hints = {
+      auto = true,
       parameter_hints_prefix = "<- ",
       other_hints_prefix = "-> ",
     }

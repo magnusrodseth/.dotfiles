@@ -261,10 +261,6 @@ require('packer').startup(function()
     end
   } -- Trouble (diagnostics)
   use {
-    'MaximilianLloyd/ascii.nvim',
-    requires = 'MunifTanjim/nui.nvim',
-  } -- ASCII art
-  use {
     'mg979/vim-visual-multi',
     branch = 'master',
   } -- Multiple cursors

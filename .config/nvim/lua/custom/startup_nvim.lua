@@ -8,7 +8,9 @@ local settings = {
     fold_section = false,
     title = "Header",
     margin = 5,
-    content = ascii.get_random("animals", "dogs"),
+    content = {
+      "</>"
+    },
     highlight = "Statement",
     default_color = "",
     oldfiles_amount = 0,
