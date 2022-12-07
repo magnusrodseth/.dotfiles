@@ -205,5 +205,6 @@
   "svelte.plugin.svelte.note-new-transformation": false,
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', Monaco, 'Courier New', monospace"
 }
