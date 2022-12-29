@@ -1,5 +1,3 @@
-local ascii = require('ascii')
-
 local settings = {
   header = {
     type = "text",

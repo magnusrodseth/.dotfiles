@@ -38,6 +38,7 @@ alias intel="idea"
 alias vim="nvim"
 alias vi="nvim"
 alias bim="nvim"
+alias gitui="git ui"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 alias tf="terraform"
@@ -50,7 +51,7 @@ alias cp='xcp'
 alias find="fd"
 alias ps="procs"
 alias top="btm"
-alias pm="pnpm"
+alias c="code"
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"
@@ -106,3 +107,8 @@ export STARSHIP_CONFIG=~/.dotfiles/.config/starship/starship.toml
 
 eval "$(starship init zsh)"
 
+
+# pnpm
+export PNPM_HOME="/Users/magnusrodseth/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
