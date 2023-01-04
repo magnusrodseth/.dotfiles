@@ -38,7 +38,7 @@ key_bindings:
   - { key: Home, mods: Shift, mode: ~Alt, action: ReceiveChar }
   - { key: End, mods: Shift, mode: ~Alt, action: ReceiveChar }
   - { key: K, mods: Command, action: ClearLogNotice }
-  - { key: K, mods: Command, chars: "\x0c" } # Clear log
+  - { key: K, mods: Command, chars: "\x18" } # Clear log
   - { key: D, mods: Command, chars: "\x01\x64" } # Split vertically
   - { key: D, mods: Command|Shift, chars: "\x01\x44" } # Split vertically
   - { key: W, mods: Command, chars: "\x01\x78" } # Close pane or tab
@@ -46,6 +46,16 @@ key_bindings:
   - { key: Down, mods: Command, chars: "\x0a" } # Navigate to down pane
   - { key: Up, mods: Command, chars: "\x0b" } # Navigate to up pane
   - { key: Right, mods: Command, chars: "\x0c" } # Navigate to right pane
+  - { key: T,     mods: Command,       chars: "\x01\x74" } # New window
+  - { key: Key1,  mods: Command,       chars: "\x01\x31" } # Tab 1
+  - { key: Key2,  mods: Command,       chars: "\x01\x32" } # Tab 2
+  - { key: Key3,  mods: Command,       chars: "\x01\x33" } # Tab 3
+  - { key: Key4,  mods: Command,       chars: "\x01\x34" } # Tab 4
+  - { key: Key5,  mods: Command,       chars: "\x01\x35" } # Tab 5
+  - { key: Key6,  mods: Command,       chars: "\x01\x36" } # Tab 6
+  - { key: Key7,  mods: Command,       chars: "\x01\x37" } # Tab 7
+  - { key: Key8,  mods: Command,       chars: "\x01\x38" } # Tab 8
+  - { key: Key9,  mods: Command,       chars: "\x01\x39" } # Tab 9
 
 mouse_bindings:
   - { mouse: Right,  action: ReceiveChar }
