@@ -52,6 +52,7 @@ alias find="fd"
 alias ps="procs"
 alias top="btm"
 alias c="code"
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
 
 export EDITOR='/usr/local/bin/nvim'
 export VISUAL="$EDITOR"
@@ -112,3 +113,8 @@ eval "$(starship init zsh)"
 export PNPM_HOME="/Users/magnusrodseth/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --border"
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

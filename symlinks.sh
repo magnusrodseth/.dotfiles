@@ -26,3 +26,5 @@ symlink ".dotfiles/vscode/keybindings.json" "~/Library/Application\ Support/Code
 symlink "~/.dotfiles/vscode/snippets" "~/Library/Application\ Support/Code/User/snippets" 
 symlink "~/.dotfiles/ideavim/.ideavimrc" "~/.ideavimrc"
 symlink "~/.dotfiles/delta/themes.gitconfig" "~/.themes.gitconfig"
+symlink "~/.dotfiles/.config/alacritty/alacritty.yml" "~/.config/alacritty/alacritty.yml"
+symlink "~/.dotfiles/.tmux.conf" "~/.tmux.conf"

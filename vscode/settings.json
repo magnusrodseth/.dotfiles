@@ -1,4 +1,5 @@
 {
+  "svelte.plugin.css.diagnostics.enable": false,
   "git.mergeEditor": true,
   "git.enableSmartCommit": true,
   "python.defaultInterpreterPath": "/Users/magnusrodseth/opt/anaconda3/bin/python",
@@ -36,7 +37,7 @@
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
-    "plaintext": false,
+    "plaintext": true,
     "markdown": true,
     "c": true
   },
@@ -207,5 +208,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontFamily": "'FiraCode Nerd Font Mono', Monaco, 'Courier New', monospace",
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

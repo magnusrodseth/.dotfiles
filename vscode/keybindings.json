@@ -186,5 +186,9 @@
   {
     "key": "alt+cmd+s",
     "command": "-saveAll"
+  },
+  {
+    "key": "alt+cmd+r alt+cmd+t",
+    "command": "typescript.restartTsServer"
   }
 ]

@@ -43,3 +43,6 @@ disabled = true
 
 [cmd_duration]
 disabled = true
+
+[c]
+disabled = true

@@ -277,4 +277,7 @@ require('packer').startup(function()
   use {
     'mbbill/undotree'
   }
+  use {
+    'christoomey/vim-tmux-navigator'
+  }
 end)
