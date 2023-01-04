@@ -23,6 +23,7 @@ plugins=(
     zsh-syntax-highlighting
     zsh-z
     vi-mode
+    tmux
 )
 
 # Controls whether the prompt is redrawn when switching to a different input mode.
