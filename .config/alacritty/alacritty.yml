@@ -10,7 +10,7 @@ window:
 font:
   normal:
     family: 'FiraCode Nerd Font Mono'
-  size: 17
+  size: 18
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
