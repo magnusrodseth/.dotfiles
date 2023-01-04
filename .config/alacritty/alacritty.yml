@@ -22,7 +22,26 @@ font:
 # Startup directory
 working_directory: /Users/magnusrodseth/dev
 
+key_bindings:
+  # scrollback
+  - { key: PageUp,   mods: Shift,         mode: ~Alt,        action: ReceiveChar }
+  - { key: PageDown, mods: Shift,         mode: ~Alt,        action: ReceiveChar }
+  - { key: Home,     mods: Shift,         mode: ~Alt,        action: ReceiveChar }
+  - { key: End,      mods: Shift,         mode: ~Alt,        action: ReceiveChar }
+  - { key: K,        mods: Control,                          action: ClearLogNotice }
+  - { key: K,        mods: Control,                          chars: "\x0c" }
+
+mouse_bindings:
+  - { mouse: Right,  action: ReceiveChar }
+
+alt_send_esc: false
+
+
 colors:
+  cursor:
+    text: '0x000000'
+    cursor: '0xc8c093'
+
   # Default colors
   primary:
     background: '0x1f1f28'
