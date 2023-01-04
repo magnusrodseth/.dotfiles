@@ -14,4 +14,6 @@ vim.api.nvim_set_option("smartcase", true)
 vim.api.nvim_set_option("incsearch", true)
 
 vim.api.nvim_set_option("colorcolumn", "90")
+vim.api.nvim_set_option("termguicolors", true)
 vim.cmd("highlight ColorColumn ctermbg=0 guibg=lightgrey")
+vim.cmd("colorscheme kanagawa")

@@ -1,5 +1,8 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
+env:
+  TERM: xterm-256color
+
 window:
   dimensions:
     columns: 400
@@ -22,14 +25,27 @@ font:
 # Startup directory
 working_directory: /Users/magnusrodseth/dev
 
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
+
 key_bindings:
-  # scrollback
-  - { key: PageUp,   mods: Shift,         mode: ~Alt,        action: ReceiveChar }
-  - { key: PageDown, mods: Shift,         mode: ~Alt,        action: ReceiveChar }
-  - { key: Home,     mods: Shift,         mode: ~Alt,        action: ReceiveChar }
-  - { key: End,      mods: Shift,         mode: ~Alt,        action: ReceiveChar }
-  - { key: K,        mods: Control,                          action: ClearLogNotice }
-  - { key: K,        mods: Control,                          chars: "\x0c" }
+  - { key: PageUp, mods: Shift, mode: ~Alt, action: ReceiveChar }
+  - { key: PageDown, mods: Shift, mode: ~Alt, action: ReceiveChar }
+  - { key: Home, mods: Shift, mode: ~Alt, action: ReceiveChar }
+  - { key: End, mods: Shift, mode: ~Alt, action: ReceiveChar }
+  - { key: K, mods: Command, action: ClearLogNotice }
+  - { key: K, mods: Command, chars: "\x0c" } # Clear log
+  - { key: D, mods: Command, chars: "\x01\x64" } # Split vertically
+  - { key: D, mods: Command|Shift, chars: "\x01\x44" } # Split vertically
+  - { key: W, mods: Command, chars: "\x01\x78" } # Close pane or tab
+  - { key: Left, mods: Command, chars: "\x08" } # Navigate to left pane
+  - { key: Down, mods: Command, chars: "\x0a" } # Navigate to down pane
+  - { key: Up, mods: Command, chars: "\x0b" } # Navigate to up pane
+  - { key: Right, mods: Command, chars: "\x0c" } # Navigate to right pane
 
 mouse_bindings:
   - { mouse: Right,  action: ReceiveChar }

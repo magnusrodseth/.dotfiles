@@ -30,7 +30,7 @@ plugins=(
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 # Controls the indicator when in vi normal mode
-MODE_INDICATOR="%F{green}<<< NORMAL%f"
+MODE_INDICATOR="%F{green}<%f"
 
 source $ZSH/oh-my-zsh.sh
 
