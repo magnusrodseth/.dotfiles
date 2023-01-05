@@ -5,39 +5,90 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jesseduffield/lazygit"
 tap "mongodb/brew"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Core application library for C
+brew "act"
+brew "bat"
+brew "berkeley-db", link: true
+brew "bottom"
 brew "glib"
-# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
+brew "python@3.9"
+brew "python@3.10", link: false
 brew "certbot"
-# GitHub command-line tool
+brew "cmake"
+brew "cmatrix"
+brew "cocoapods"
+brew "deno"
+brew "harfbuzz"
+brew "node", link: false
+brew "emscripten"
+brew "envoy"
+brew "exa"
+brew "fastlane"
+brew "fd"
+brew "fish"
+brew "fzf"
 brew "gh"
-# Distributed revision control system
+brew "ghostscript", link: false
 brew "git"
-# Generate introspection data for GObject libraries
+brew "git-delta"
+brew "go"
 brew "gobject-introspection"
-# Network authentication protocol
-brew "krb5"
-# Library that provides automatic proxy configuration management
+brew "gopls"
+brew "gradle"
+brew "htop"
+brew "kafka"
+brew "kotlin"
+brew "kotlin-language-server"
+brew "lazydocker"
+brew "libfido2"
+brew "libidn2"
 brew "libproxy"
-# Simple tool to make locally trusted development certificates
+brew "llvm"
+brew "lua-language-server"
+brew "luajit"
+brew "markdown"
 brew "mkcert"
-# Framework for layout and rendering of i18n text
+brew "mysql", restart_service: true
+brew "tree-sitter"
+brew "neovim"
+brew "nvm"
+brew "openssl@3"
 brew "pango"
-# Object-relational database system
-brew "postgresql", restart_service: true
-# Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
-# User interface to the TELNET protocol
+brew "perl"
+brew "pipenv"
+brew "pnpm"
+brew "poetry"
+brew "postgresql@14"
+brew "procs"
+brew "redis"
+brew "ripgrep"
+brew "rm-improved"
+brew "rust-analyzer"
+brew "starship"
 brew "telnet"
-# UNIX shell (command interpreter)
+brew "terraform"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
+brew "webp"
+brew "wget"
+brew "yaml-language-server"
 brew "zsh"
-# Additional completion definitions for zsh
+brew "zsh-completions"
 brew "aws/tap/lightsailctl"
-# Terraform
-brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/consul"
+brew "hashicorp/tap/nomad"
+brew "hashicorp/tap/terraform-ls"
+brew "jesseduffield/lazygit/lazygit"
+cask "alacritty"
+cask "alfred"
+cask "aws-vault"
+cask "drawio"
+cask "firefox"
 cask "font-hack-nerd-font"
-# Full TeX Live distribution without GUI applications
 cask "mactex-no-gui"
+cask "microsoft-edge"
+cask "notion"
+cask "vagrant"
+cask "virtualbox"

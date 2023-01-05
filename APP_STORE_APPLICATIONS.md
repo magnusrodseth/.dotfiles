@@ -2,8 +2,7 @@
 
 ## Why?
 
-Some applications cannot be downloaded using a package manager (such as
-Homebrew).
+Some applications cannot be downloaded using Homebrew.
 
 Thus, a list of applications required to be downloaded using the Mac App Store
 follows below.

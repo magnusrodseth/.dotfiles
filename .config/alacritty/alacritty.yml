@@ -13,7 +13,7 @@ window:
 font:
   normal:
     family: 'FiraCode Nerd Font Mono'
-  size: 18
+  size: 17
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -38,7 +38,7 @@ key_bindings:
   - { key: Home, mods: Shift, mode: ~Alt, action: ReceiveChar }
   - { key: End, mods: Shift, mode: ~Alt, action: ReceiveChar }
   - { key: K, mods: Command, action: ClearLogNotice }
-  - { key: K, mods: Command, chars: "\x18" } # Clear log
+  - { key: K, mods: Command, chars: "\x18\x03" } # Clear log
   - { key: D, mods: Command, chars: "\x01\x64" } # Split vertically
   - { key: D, mods: Command|Shift, chars: "\x01\x44" } # Split vertically
   - { key: W, mods: Command, chars: "\x01\x78" } # Close pane or tab
