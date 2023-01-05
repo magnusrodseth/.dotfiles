@@ -21,3 +21,4 @@ source ~/.dotfiles/scripts/mac.sh
 
 # Setup Neovim
 nvim +PackerSync +qall
+
