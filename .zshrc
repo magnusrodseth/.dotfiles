@@ -18,14 +18,14 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # zsh scripts
-source ./zsh/aliases.sh
-source ./zsh/nvm.sh
-source ./zsh/bun.sh
-source ./zsh/fzf.sh
-source ./zsh/google.sh
-source ./zsh/nvim.sh
-source ./zsh/starship.sh
-source ./zsh/pnpm.sh
+source ~/zsh/aliases.sh
+source ~/zsh/nvm.sh
+source ~/zsh/bun.sh
+source ~/zsh/fzf.sh
+source ~/zsh/google.sh
+source ~/zsh/nvim.sh
+source ~/zsh/starship.sh
+source ~/zsh/pnpm.sh
 
 # Random exports
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
