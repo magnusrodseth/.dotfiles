@@ -12,3 +12,4 @@ follows below.
 - [Spark Mail App](https://sparkmailapp.com/)
 - [Todoist](https://todoist.com/nb/)
 - [Flow](https://flowapp.info/)
+- [Balance Lock](https://apps.apple.com/no/app/balance-lock/id1019371109?mt=12)
