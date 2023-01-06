@@ -37,7 +37,9 @@ local on_attach = function(client, buffer_number)
   vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, buffer_options)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, buffer_options)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, buffer_options)
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, buffer_options)
+  vim.keymap.set('n', '<space>f', function()
+    vim.lsp.buf.format { async = true }
+  end, buffer_options)
 
   -- Display diagnostics using float, not to the right of the code
   vim.api.nvim_create_autocmd("CursorHold", {

@@ -276,8 +276,21 @@ require('packer').startup(function()
   } -- Comment with treesitter context
   use {
     'mbbill/undotree'
-  }
+  } -- Vim undo tree
   use {
     'christoomey/vim-tmux-navigator'
-  }
+  } -- Tmux navigation
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    config = function()
+      require('null-ls').setup(require('custom.null_ls'))
+    end,
+    requires = 'neovim/nvim-lspconfig'
+  } -- Null LSP
+  use {
+    'MunifTanjim/prettier.nvim',
+    config = function()
+      require('prettier').setup(require('custom.prettier'))
+    end
+  } -- Prettier integration
 end)
