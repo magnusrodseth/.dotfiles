@@ -41,3 +41,5 @@
     ui = !"/usr/local/bin/lazygit"
     ; fpo - fetch --prune origin
     fpo = fetch --prune origin
+    ; ma - merge --abort
+    ma = merge --abort
