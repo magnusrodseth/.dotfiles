@@ -30,3 +30,4 @@ source ~/zsh/pnpm.sh
 # Random exports
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$(brew --prefix bison)/bin:$PATH"

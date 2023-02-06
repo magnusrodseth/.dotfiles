@@ -95,7 +95,8 @@
   "python.jediEnabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "git.autofetch": true,
   "[dart]": {
