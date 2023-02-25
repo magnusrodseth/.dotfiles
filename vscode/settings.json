@@ -36,7 +36,7 @@
   "todohighlight.keywords": [],
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
+    "yaml": true,
     "plaintext": true,
     "markdown": true,
     "c": true
@@ -212,5 +212,10 @@
   "css.lint.unknownAtRules": "ignore",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  "editor.minimap.enabled": false
 }
