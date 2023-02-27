@@ -19,7 +19,7 @@ remember to do the following occasionally after installing new packages and cask
 # Update all package definitions
 brew update
 
-# Overwrit ecurrently installed formulae/casks/etc... to Brewfile
+# Overwrite currently installed formulae/casks/etc... to Brewfile
 brew bundle dump --force
 ```
 
