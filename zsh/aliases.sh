@@ -6,6 +6,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias bim="nvim"
 alias gitui="git ui"
+alias gi="git ui"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 alias tf="terraform"
