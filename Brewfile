@@ -101,6 +101,7 @@ brew "louisbrunner/valgrind/valgrind", args: ["HEAD"]
 cask "alacritty"
 cask "alfred"
 cask "aws-vault"
+cask "bartender"
 cask "burp-suite"
 cask "drawio"
 cask "firefox"
