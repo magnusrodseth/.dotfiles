@@ -73,7 +73,8 @@
   "editor.formatOnPaste": true,
   "redhat.telemetry.enabled": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "git-rebase-todo": "default"
   },
   "python.languageServer": "Default",
   "python.formatting.provider": "autopep8",

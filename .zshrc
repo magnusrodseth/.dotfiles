@@ -19,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh scripts
 source ~/zsh/aliases.sh
+source ~/zsh/functions.sh
 source ~/zsh/nvm.sh
 source ~/zsh/bun.sh
 source ~/zsh/fzf.sh
