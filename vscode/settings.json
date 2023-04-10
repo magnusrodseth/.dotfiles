@@ -218,5 +218,6 @@
     "editor.defaultFormatter": "jock.svg"
   },
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "svg.preview.mode": "svg"
 }

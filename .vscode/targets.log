@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Mar 15 12:41:46 2023
+# Make data base, printed on Wed Mar 15 19:26:43 2023
 
 # Variables
 
@@ -42,7 +42,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-no","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/make
 # environment
-STARSHIP_SESSION_KEY = 1573047521127819
+STARSHIP_SESSION_KEY = 8876231482787111
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -92,7 +92,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/magnusrodseth/Library/Application Support/Code/CachedData/5e805b79fcb6ba4c2d23712967df89a089da575b
+VSCODE_CODE_CACHE_PATH = /Users/magnusrodseth/Library/Application Support/Code/CachedData/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884
 # environment
 LOGNAME = magnusrodseth
 # environment
@@ -124,7 +124,7 @@ USER = magnusrodseth
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t1p0:2EB89653-0BAF-4D49-A896-C9CFFB26DF1B
+TERM_SESSION_ID = w0t1p0:548C819B-E024-4653-8315-3AB9614CB912
 # environment
 LESS = -R
 # automatic
@@ -156,7 +156,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/magnusrodseth/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.125859338.125859344.6758DD41-0BD3-4BEC-AF40-7CBD2E21753B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.125859338.125859344.9DA3F034-8AE4-4063-82BA-780329ABEC49
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # automatic
@@ -164,7 +164,7 @@ LC_TERMINAL_VERSION = 3.4.19
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t1p0:2EB89653-0BAF-4D49-A896-C9CFFB26DF1B
+ITERM_SESSION_ID = w0t1p0:548C819B-E024-4653-8315-3AB9614CB912
 # environment
 COLORFGBG = 15;0
 # environment
@@ -200,7 +200,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 91730
+VSCODE_PID = 27545
 # environment
 STARSHIP_CONFIG = /Users/magnusrodseth/.dotfiles/.config/starship/starship.toml
 # environment
@@ -288,7 +288,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Wed Mar 15 12:41:46 2023
+# Finished Make data base on Wed Mar 15 19:26:43 2023
 
  
 make: *** No rule to make target `all'.  Stop.
