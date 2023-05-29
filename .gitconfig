@@ -43,3 +43,5 @@
     fpo = fetch --prune origin
     ; ma - merge --abort
     ma = merge --abort
+[push]
+	autoSetupRemote = true
