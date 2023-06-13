@@ -8,6 +8,7 @@ alias bim="nvim"
 alias gitui="git ui"
 alias gi="git ui"
 alias gitfpo="git fpo"
+alias gitk="git k"
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 alias lzd="lazydocker"
 alias tf="terraform"
