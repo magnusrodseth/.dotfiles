@@ -1,5 +1,5 @@
 # Path to oh-my-zsh installation
-export ZSH="/Users/magnusrodseth/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export DEFAULT_USER="$(whoami)"
 
 CONFIG_DIR="~/.config/lazygit"
